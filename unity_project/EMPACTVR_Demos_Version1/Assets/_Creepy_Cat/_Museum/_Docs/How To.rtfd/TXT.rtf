@@ -1,0 +1,103 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf820
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 ArialMT;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww20200\viewh14660\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b\fs28 \cf0 For support contact creepycat to : 
+\f1\b0 black.creepy.cat@gmail.com\
+\
+																							
+\b\fs72 SLIDED 1.0
+\f0  \
+
+\fs28 \
+\
+How to create a presentation ?:
+\b0\fs24 \
+\
+
+\fs28 It's pretty simple! \
+\
+0) Create a blank scene :)\
+\
+1) Create a empty gameobject and call it : MyTarget\
+\
+2) Drop the script called : Slided.cs (_Slided1.0 directory) on the camera, it should be like this :\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\fs24 \cf0 {{\NeXTGraphic Capture d’écran 2015-02-26 à 13.08.31.png \width8520 \height3300
+}�}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\fs28 \cf0 \
+\
+Now you need to change the parameters! Under 'Slidepivot' drop the gameobject called MyTarget. For '
+\b Camspeed
+\b0 ', define 8, and 7 for the '
+\b Pivotspeed
+\b0 ' (the pivot speed is the speed of the target of the camera try to play with differents values), the values '
+\b DecalX
+\b0 ' and '
+\b DecalY
+\b0 ' are used to move the camera to the left or right from the target, put 0 for the two values. And put 4 in the case 'Waypoints' \
+\
+It should be like this :\
+\
+
+\fs24 {{\NeXTGraphic Capture d’écran 2015-02-26 à 13.15.06.png \width7720 \height4740
+}�}
+\fs28 \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 Now we gona setup the scene !\
+\
+3) In the prefab directory, get the prefab called 'My_Slide_Normal' and drop into the scene and place it to 0,0,0 (x/y/z)\
+\
+4) Under the scene, duplicate 'My_Slide_Normal' four time, and rename each instance like this :\
+\
+My_Slide_01\
+My_Slide_02\
+My_Slide_03\
+My_Slide_04\
+\
+Unfold each 'My_Slide_XX' and drop a material with a picture on each child mesh instance (goto directory '
+\b _Presentation
+\b0 ' there is examples). \
+\
+And now, move each 'My_Slide_XX' prefabs along X axis My_Slide_01 => My_Slide_02 => My_Slide_03 => My_Slide_04, the scene should be like this :\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0   
+\fs24 {{\NeXTGraphic Capture d’écran 2015-02-26 à 13.20.21.png \width18220 \height5520
+}�}
+\fs28 \
+\
+The hierarchy window :\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\fs24 \cf0 {{\NeXTGraphic Capture d’écran 2015-02-26 à 13.18.50.png \width5400 \height3260
+}�}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\fs28 \cf0 \
+\
+5) Now return to the camera, and drag n drop each 'My_Slide_XX' to the Slided script waypoints, it should be like this :\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\fs24 \cf0 {{\NeXTGraphic Capture d’écran 2015-02-26 à 13.25.43.png \width7680 \height4720
+}�}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\fs28 \cf0 \
+\
+It's finished! You just have to play, and use the right and left directional keys to swipe into the presentation :)\
+\
+\
+\
+FAQ : I need alway the prefab called My_Slide_01 to create a waypoint? If i just want to point on my hown object or nothing ?\
+\
+- You need to use this prefab always! If you don't want to see it appear on the screen, just Unckeck the Mesh renderer (inspector)\
+\
+}
